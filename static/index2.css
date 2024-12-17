@@ -1,0 +1,109 @@
+/* styles.css */
+ body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+} 
+.main-style{
+    background-image: url('https://res.cloudinary.com/dzysiltcv/image/upload/v1732602717/samples/employee_attrition_2_decf0n.jpg');
+    background-size: cover;
+    /* filter: blur(2px);  */
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("https://res.cloudinary.com/dzysiltcv/image/upload/v1732602717/samples/employee_attrition_2_decf0n.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.containersumma {
+    width:70vw;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+.navbar-style {
+    font-family: "Roboto";
+    color: white;
+    padding: 10px
+}
+
+.navbar-style:hover {
+    transition: 0.3s;
+    color: #d0b200;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+
+    /*font-size: 24px;
+    background-color: #d0b200;*/
+}

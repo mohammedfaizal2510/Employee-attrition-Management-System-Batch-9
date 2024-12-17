@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        text-align: left;
+    }
+    table th, table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    table th {
+        background-color: #f4f4f4;
+    }
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand shadow-lg navbar-style" href="#sectionHome">Employee Attrition Management System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="navbar-style active shadow-lg" href="#sectionHome">Home</a>
+                    <a class="navbar-style shadow-lg" href="#sectionExistingEmployee">Existing Employees</a>
+                    <a class="navbar-style shadow-lg" href="#sectionNewEmployee">New Employee Prediction</a>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+      <!-- Home Section -->
+        <div id="sectionHome" style="height: 100vh;" class="main-style mb-5">
+            <div class="container">
+            <div class="row d-flex flex-row justify-content-center">
+                <div class="col-12" style="margin-top: 30%;">
+                    <div class="bg-text shadow">
+                        <h1 class="text-center">Welcome to Employee Attrition Management System</h1>
+                        <p class="text-center">Analyze employee data and predict their potential attrition or retention.</p>
+        
+                    </div>
+                <!-- <h1 class="text-center shadow-lg" style="color: white; font-weight: 700; filter: none">Welcome to Employee Attrition Management System</h1> -->
+                <!-- <p class="text-center shadow-lg" style="color: white; font-weight: 700; font-size: 29px;">Analyze employee data and predict their potential attrition or retention.</p> -->
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+      <div class="container" id="sectionNewEmployee" style="height: 100vh;">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <div class="containersumma">
+                    <!-- <div class=""> -->
+                        <h1>Employee Attrition Prediction</h1>
+                        <form id="predictionForm">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required>
+                    
+                            <label for="department">Department:</label>
+                            <select id="department" name="department" required>
+                                <option value="0">Sales</option>
+                                <option value="1">Research & Development</option>
+                                <option value="2">Human Resources</option>
+                            </select>
+                    
+                            <label for="income">Monthly Income:</label>
+                            <input type="number" id="income" name="income" required>
+                    
+                            <label for="satisfaction">Job Satisfaction (1-5):</label>
+                            <input type="number" id="satisfaction" name="satisfaction" min="1" max="5" required>
+                    
+                            <label for="experience">Years at Company:</label>
+                            <input type="number" id="experience" name="experience" required>
+                    
+                            <button type="button" id="predictButton">Predict Attrition Risk</button>
+                        </form>
+                    
+                        <div id="result"></div>
+                    </div>            
+            </div>
+        </div>
+      </div>
+
+
+      <!-- Existing Employees Section -->
+        <div id="sectionExistingEmployee" style="height: 100vh;">
+            <div class="container">
+            <h1>Existing Employees Attrition Analysis</h1>
+            <div id="summary">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Age</th>
+                            <th>Department</th>
+                            <th>MonthlyIncome</th>
+                            <th>JobSatisfaction</th>
+                            <th>YearsAtCompany</th>
+                            <th>Attrition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>25</td><td>Sales</td><td>5000</td><td>3</td><td>2</td><td>0</td></tr>
+                        <tr><td>30</td><td>Research & Development</td><td>7000</td><td>4</td><td>5</td><td>1</td></tr>
+                        <tr><td>45</td><td>Human Resources</td><td>8000</td><td>2</td><td>10</td><td>0</td></tr>
+                        <tr><td>35</td><td>Sales</td><td>6200</td><td>5</td><td>3</td><td>1</td></tr>
+                        <tr><td>57</td><td>Human Resources</td><td>7550</td><td>3</td><td>3</td><td>0</td></tr>
+                        <tr><td>41</td><td>Sales</td><td>5061</td><td>3</td><td>4</td><td>1</td></tr>
+                        <tr><td>56</td><td>Human Resources</td><td>5960</td><td>4</td><td>5</td><td>0</td></tr>
+                        <tr><td>29</td><td>Research & Development</td><td>7250</td><td>3</td><td>5</td><td>0</td></tr>
+                        <tr><td>41</td><td>Human Resources</td><td>7780</td><td>4</td><td>1</td><td>0</td></tr>
+                        <tr><td>39</td><td>Sales</td><td>5896</td><td>5</td><td>7</td><td>1</td></tr>
+                        <tr><td>49</td><td>Research & Development</td><td>4878</td><td>2</td><td>1</td><td>1</td></tr>
+                        <tr><td>34</td><td>Human Resources</td><td>4963</td><td>2</td><td>5</td><td>1</td></tr>
+                        <tr><td>25</td><td>Sales</td><td>7554</td><td>5</td><td>6</td><td>1</td></tr>
+                        <tr><td>43</td><td>Research & Development</td><td>4862</td><td>4</td><td>1</td><td>1</td></tr>
+                        <tr><td>34</td><td>Human Resources</td><td>4017</td><td>1</td><td>4</td><td>0</td></tr>
+                        <tr><td>27</td><td>Human Resources</td><td>6536</td><td>4</td><td>8</td><td>0</td></tr>
+                        <tr><td>30</td><td>Research & Development</td><td>7641</td><td>4</td><td>9</td><td>1</td></tr>
+                        <tr><td>35</td><td>Research & Development</td><td>5531</td><td>3</td><td>7</td><td>1</td></tr>
+                        <tr><td>25</td><td>Research & Development</td><td>5919</td><td>4</td><td>6</td><td>0</td></tr>
+                        <tr><td>51</td><td>Sales</td><td>6629</td><td>1</td><td>8</td><td>0</td></tr>
+                        <tr><td>41</td><td>Human Resources</td><td>4142</td><td>1</td><td>3</td><td>0</td></tr>
+                        <tr><td>27</td><td>Human Resources</td><td>7967</td><td>5</td><td>2</td><td>1</td></tr>
+                        <tr><td>28</td><td>Sales</td><td>6081</td><td>1</td><td>4</td><td>0</td></tr>
+                        <tr><td>58</td><td>Human Resources</td><td>5817</td><td>1</td><td>9</td><td>1</td></tr>
+                        <tr><td>41</td><td>Research & Development</td><td>7592</td><td>2</td><td>1</td><td>0</td></tr>
+                        <tr><td>29</td><td>Sales</td><td>6463</td><td>4</td><td>5</td><td>0</td></tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+            </div>
+        </div>
+
+    
+    
+
+<script src="{{ url_for('static', filename='index1.js') }}"></script>
+<script>
+    async function fetchAttritionSummary() {
+        const response = await fetch('/attrition-summary');
+        const summary = await response.json();
+        displaySummary(summary);
+    }
+
+    function displaySummary(summary) {
+        const summaryDiv = document.getElementById("summary");
+        summaryDiv.innerHTML = `
+            <p>Total Employees: ${summary.totalEmployees}</p>
+            <p>Employees who left: ${summary.attritionCount}</p>
+            <p>Attrition Rate: ${summary.attritionRate}%</p>
+        `;
+    }
+
+    // Fetch and display summary on page load
+    window.onload = fetchAttritionSummary;
+</script>
+</body>
+</html>
+
+
+      <!-- <div class="container">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+      </div> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attrition Prediction</title>
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index2.css') }}">
+<script src="{{ url_for('static', filename='index1.js') }}"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Attrition Prediction</h1>
+    <form id="predictionForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="0">Sales</option>
+            <option value="1">Research & Development</option>
+            <option value="2">Human Resources</option>
+        </select>
+
+        <label for="income">Monthly Income:</label>
+        <input type="number" id="income" name="income" required>
+
+        <label for="satisfaction">Job Satisfaction (1-5):</label>
+        <input type="number" id="satisfaction" name="satisfaction" min="1" max="5" required>
+
+        <label for="experience">Years at Company:</label>
+        <input type="number" id="experience" name="experience" required>
+
+        <button type="button" id="predictButton">Predict Attrition Risk</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="index1.js"></script>
+</body>
+</html> -->

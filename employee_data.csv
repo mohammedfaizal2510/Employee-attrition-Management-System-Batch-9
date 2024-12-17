@@ -1,0 +1,105 @@
+Age,Department,MonthlyIncome,JobSatisfaction,YearsAtCompany,Attrition
+25,Sales,5000,3,2,0
+30,Research & Development,7000,4,5,1
+45,Human Resources,8000,2,10,0
+35,Sales,6200,5,3,1
+57,Human Resources,7550,3,3,0
+41,Sales,5061,3,4,1
+56,Human Resources,5960,4,5,0
+29,Research & Development,7250,3,5,0
+41,Human Resources,7780,4,1,0
+39,Sales,5896,5,7,1
+49,Research & Development,4878,2,1,1
+34,Human Resources,4963,2,5,1
+25,Sales,7554,5,6,1
+43,Research & Development,4862,4,1,1
+34,Human Resources,4017,1,4,0
+27,Human Resources,6536,4,8,0
+30,Research & Development,7641,4,9,1
+35,Research & Development,5531,3,7,1
+25,Research & Development,5919,4,6,0
+51,Sales,6629,1,8,0
+41,Human Resources,4142,1,3,0
+27,Human Resources,7967,5,2,1
+28,Sales,6081,1,4,0
+58,Human Resources,5817,1,9,1
+41,Research & Development,7592,2,1,0
+29,Sales,6463,4,5,0
+49,Research & Development,6100,5,8,1
+55,Research & Development,7985,4,3,1
+33,Sales,7521,2,7,0
+30,Research & Development,6655,4,3,0
+29,Human Resources,6465,5,5,0
+41,Sales,7479,2,4,0
+49,Human Resources,5928,4,2,1
+22,Human Resources,6241,5,5,1
+37,Research & Development,6719,3,8,1
+53,Research & Development,5921,4,2,0
+43,Sales,7940,2,3,0
+36,Human Resources,4337,1,4,1
+53,Research & Development,6438,3,6,1
+37,Research & Development,6101,5,1,0
+30,Research & Development,5121,5,1,1
+22,Human Resources,6828,2,2,1
+24,Sales,7817,3,1,1
+53,Research & Development,6094,3,6,1
+23,Human Resources,5698,1,10,1
+38,Human Resources,6795,4,2,1
+52,Sales,4718,4,4,0
+48,Research & Development,7626,2,9,1
+32,Human Resources,5921,3,8,1
+25,Research & Development,5936,5,3,1
+28,Research & Development,6984,2,3,0
+26,Sales,4721,5,10,0
+33,Human Resources,5053,3,4,0
+39,Research & Development,6565,3,8,0
+58,Human Resources,6687,2,8,1
+44,Sales,7873,3,9,1
+27,Sales,5370,3,3,0
+48,Sales,4961,5,8,1
+54,Sales,5962,1,8,1
+22,Sales,7716,1,7,1
+30,Sales,4192,1,6,1
+47,Human Resources,5738,5,6,0
+51,Human Resources,5769,2,2,1
+60,Research & Development,4529,2,6,1
+38,Sales,6290,1,8,0
+26,Research & Development,5957,3,5,1
+27,Sales,7090,3,9,0
+57,Human Resources,4093,1,2,1
+22,Research & Development,7008,2,2,1
+32,Research & Development,6607,1,9,1
+24,Research & Development,5862,2,2,0
+31,Human Resources,6751,4,7,1
+24,Research & Development,6327,4,10,1
+54,Human Resources,4125,4,2,0
+41,Sales,5300,2,10,1
+54,Human Resources,6759,2,9,0
+35,Human Resources,5281,2,3,1
+45,Research & Development,5267,1,9,0
+38,Sales,5357,3,9,1
+53,Sales,7540,2,4,0
+53,Sales,5295,5,6,0
+23,Research & Development,7920,3,9,1
+24,Human Resources,5366,2,10,1
+34,Human Resources,6758,4,4,1
+52,Research & Development,5978,2,7,0
+26,Human Resources,7030,4,3,0
+59,Human Resources,5031,5,10,0
+31,Sales,6357,1,7,0
+42,Human Resources,7266,5,9,1
+60,Sales,7306,3,2,0
+43,Sales,7293,4,5,1
+38,Research & Development,5882,2,8,1
+31,Human Resources,5989,3,8,1
+31,Research & Development,4454,3,9,1
+52,Research & Development,5750,1,4,0
+42,Human Resources,7481,3,4,0
+42,Research & Development,6073,5,4,0
+33,Sales,4577,5,2,0
+33,Sales,4827,5,5,0
+34,Human Resources,7919,2,6,1
+25,Human Resources,7146,3,7,0
+27,Research & Development,6364,1,7,0
+48,Sales,6731,1,8,0
+58,Research & Development,6049,5,7,0
