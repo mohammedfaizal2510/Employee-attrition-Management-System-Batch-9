@@ -11,8 +11,9 @@
 .main-style{
     background-image: url('https://res.cloudinary.com/dzysiltcv/image/upload/v1732602717/samples/employee_attrition_2_decf0n.jpg');
     background-size: cover;
-    /* filter: blur(2px);  */
-}
+    /* filter: blur(2px);  
+    cvc*/
+} 
 
 .bg-image {
     /* The image used */
